@@ -1,0 +1,53 @@
+header {
+
+    .menu-principal {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        padding: 0px 40px;
+        margin: 0px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+        @media screen and (max-width: $desktopMinWidth) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item {
+            display: inline-block;
+
+            @media screen and (max-width: $desktopMinWidth) {
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__logo {
+            margin-right: auto;
+
+            @media screen and (max-width: $desktopMinWidth) {
+                margin-right: 0;
+            }
+        }
+
+        &__opcio {
+            padding: 10px 20px;
+
+            &:hover {
+                background-color: red;
+                cursor: pointer;
+            }
+        }
+
+        &__media {
+            display: none;
+        }
+
+        &__home {
+            display: none;
+        }
+    }
+
+}

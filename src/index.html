@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+<html class="portada">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playpen+Sans:wght@300;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <title>UOC Boilerplate</title>
+</head>
+
+<body>
+  <include src="./views/menu.html"></include>
+  <main class="portada__contingut">
+    <section class="portada__seccio">
+      <h2>Amics del tennis</h2>
+      <p>Un espai apassionat pel món de la pilota groga. Estem emocionats d'anunciar que també estem engegant una
+        apassionant Lliga de Tennis de la comarca de Palma. Per això, fem una crida a tots els entusiastes a unir-se a
+        nosaltres en aquesta emocionant empresa</p>
+      <p>També oferim programes d'extraescolars de tennis, especialment dissenyats per als nens, per ajudar-los a
+        descobrir la diversió i els beneficis d'aquest esport. Amb classes de tennis adaptades a tots els nivells d'edat
+        i habilitat, els nostres instructors qualificats guiaran el teu camí cap a l'excel·lència tècnica i la passió
+        pel tennis.</p>
+      <p>Uneix-te a nosaltres en aquesta aventura, on la raqueta es converteix en la clau d'una vida activa i saludable,
+        tant a nivell individual com en el marc de la nostra vibrant Lliga de Tennis local.</p>
+    </section>
+
+    <div>
+      <img class="portada__imatge" src="assets/images/racket.png">
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>
