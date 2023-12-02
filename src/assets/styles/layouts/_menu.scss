@@ -2,13 +2,14 @@ header {
 
   .menu-principal {
     display: flex;
-    list-style: none;
     align-items: center;
-    text-align: center;
-    background-color: white;
     padding: 10px 40px;
     margin: 0px;
     margin-bottom: 0px;
+
+    text-align: center;
+    list-style: none;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 
     @media screen and (max-width: $desktopMinWidth) {
@@ -37,18 +38,13 @@ header {
       padding: 10px 20px;
 
       &:hover {
-        background-color: red;
         cursor: pointer;
+        background-color: red;
       }
     }
 
-    &__media {
-      display: none;
-    }
+    &__media { display: none; }
 
-    &__home {
-      display: none;
-    }
+    &__home { display: none; }
   }
-
 }

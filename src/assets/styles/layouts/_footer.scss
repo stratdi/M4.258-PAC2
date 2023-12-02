@@ -2,29 +2,25 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 
   &__contacte {
-    background-color: white;
     padding: 20px 40px;
     text-align: center;
+    background-color: white;
   }
 
   .menu-principal {
     justify-content: center;
-    box-shadow: none;
     margin-bottom: 0px;
+    box-shadow: none;
 
     &__item {
-      &--right {
-        margin-left: 0;
-      }
+      &--right { margin-left: 0; }
     }
 
     &__media {
       display: block;
       margin-left: auto;
 
-      @media screen and (max-width: $desktopMinWidth) {
-        margin-left: 0;
-      }
+      @media screen and (max-width: $desktopMinWidth) { margin-left: 0; }
     }
 
     &__home {

@@ -1,7 +1,8 @@
 .formulari {
-  height: 70dvh;
-  width: 100dvw;
   display: table-cell;
+
+  width: 100dvw;
+  height: 70dvh;
 
   &__boto {
     background-color: lch($enviarColor / $enviarTransparent);

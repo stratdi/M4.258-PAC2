@@ -1,6 +1,4 @@
-* {
-  font-family: 'Playpen Sans'
-}
+* { font-family: 'Playpen Sans', sans-serif }
 
 html {
   height: 100%;
@@ -9,19 +7,15 @@ html {
 
 /* Modificacions per tenir el footer sempre al final */
 body {
-  margin: 0;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100dvh;
+  margin: 0;
 }
 
-footer {
-  margin-top: auto;
-}
+footer { margin-top: auto; }
 
-ul {
-  padding: 0px;
-}
+ul { padding: 0px; }
 
 .imatge {
   max-width: 100%;
