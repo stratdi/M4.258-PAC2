@@ -2,10 +2,37 @@
   font-family: 'Playpen Sans'
 }
 
+html {
+  height: 100%;
+  background-color: white;
+}
+
+/* Modificacions per tenir el footer sempre al final */
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin-top: auto;
 }
 
 ul {
   padding: 0px;
+}
+
+.imatge {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/**
+* Genera un gradient de tipus radial basant-se en els colors dels paràmetres.
+*/
+@function generateGradientRadial($color1, $color2) {
+  $radial-gradient: repeating-radial-gradient(circle at 0 0, transparent 0, #{$color1} 40px);
+  $linear-gradient: repeating-linear-gradient(#{$color2}55, #{$color2});
+  @return #{$radial-gradient}, #{$linear-gradient};
 }

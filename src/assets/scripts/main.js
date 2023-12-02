@@ -1,3 +1,5 @@
+import * as bootstrap from 'bootstrap';
+
 /**
  * Import dependencies from node_modules
  * see commented examples below

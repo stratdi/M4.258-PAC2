@@ -3,7 +3,6 @@
 
     &__contacte {
         background-color: white;
-        margin-top:20px;
         padding:20px 40px;
         text-align: center;
     }
@@ -11,7 +10,7 @@
     .menu-principal {
         justify-content: center;
         box-shadow: none;
-
+        margin-bottom: 0px;
         &__item {
             &--right {
                 margin-left: 0;
