@@ -1,124 +1,124 @@
 body {
-    background-color: $bgColor;
-    background-image: generateGradientRadial($bgColor, $bgSubcolor);
+  background-color: $bgColor;
+  background-image: generateGradientRadial($bgColor, $bgSubcolor);
 }
 
 .poster {
-    max-width: $desktopMinWidth;
-    margin: auto;
+  max-width: $desktopMinWidth;
+  margin: auto;
 
-    container-type: inline-size;
-    container-name: title-size;
+  container-type: inline-size;
+  container-name: title-size;
+
+  @media screen and (max-width: $desktopMinWidth) {
+    margin: 20px;
+  }
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: minmax(10em, max-content) minmax(14em, max-content) minmax(14em, max-content) fit-content(18em) 2fr;
+    grid-template-rows: 15vh 30vh 25vh 20vh;
 
     @media screen and (max-width: $desktopMinWidth) {
-        margin: 20px;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
     }
+  }
+
+  &__imatge {
+    height: 300px;
+    text-align: center;
 
     @supports (display: grid) {
-        display: grid;
-        grid-template-columns: minmax(10em, max-content) minmax(14em, max-content) minmax(14em, max-content) fit-content(18em) 2fr;
-        grid-template-rows: 15vh 30vh 25vh 20vh;
+      height: 600px;
 
-        @media screen and (max-width: $desktopMinWidth) {
-            grid-template-columns: 100%;
-            grid-template-rows: auto;
-        }
-    }
+      grid-column: 1/3;
+      grid-row: 1/1;
 
-    &__imatge {
+      @media screen and (max-width: $desktopMinWidth) {
         height: 300px;
+
+        grid-column: 1;
+        grid-row: 2;
         text-align: center;
-
-        @supports (display: grid) {
-            height: 600px;
-
-            grid-column: 1/3;
-            grid-row: 1/1;
-
-            @media screen and (max-width: $desktopMinWidth) {
-                height: 300px;
-
-                grid-column: 1;
-                grid-row: 2;
-                text-align: center;
-            }
-        }
+      }
     }
+  }
 
-    &__logo {
+  &__logo {
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.39);
+    container: rotate / inline-size;
+
+    @supports (display: grid) {
+      grid-column: 4/5;
+      grid-row: 5/5;
+
+      @media screen and (max-width: $desktopMinWidth) {
+        grid-column: 1;
+        grid-row: 1;
         text-align: center;
-        font-size: 3rem;
-        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.39);
-        container: rotate / inline-size;
-
-        @supports (display: grid) {
-            grid-column: 4/5;
-            grid-row: 5/5;
-
-            @media screen and (max-width: $desktopMinWidth) {
-                grid-column: 1;
-                grid-row: 1;
-                text-align: center;
-            }
-        }
+      }
     }
+  }
 
-    &__intro {
-        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.39);
+  &__intro {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.39);
 
-        @supports (display: grid) {
-            grid-column: 3/4;
-            grid-row: 5/3;
+    @supports (display: grid) {
+      grid-column: 3/4;
+      grid-row: 5/3;
 
-            @media screen and (max-width: $desktopMinWidth) {
-                grid-column: 1;
-                grid-row: 3;
-                text-align: center;
-            }
-        }
+      @media screen and (max-width: $desktopMinWidth) {
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+      }
     }
+  }
 
-    &__info {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.25rem;
-        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.39);
-        margin-top: 20px;
+  &__info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.39);
+    margin-top: 20px;
 
-        @supports (display: grid) {
-            grid-column: 1/3;
-            grid-row: 4/5;
+    @supports (display: grid) {
+      grid-column: 1/3;
+      grid-row: 4/5;
 
-            @media screen and (max-width: $desktopMinWidth) {
-                grid-column: 1;
-                grid-row: 4;
-                text-align: center;
-            }
-        }
+      @media screen and (max-width: $desktopMinWidth) {
+        grid-column: 1;
+        grid-row: 4;
+        text-align: center;
+      }
     }
+  }
 
-    &__frase {
-        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.39);
+  &__frase {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.39);
 
-        @supports (display: grid) {
-            margin-top: 20px;
-            grid-column: 4/4;
-            grid-row: 1/5;
-            writing-mode: vertical-rl;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: bold;
+    @supports (display: grid) {
+      margin-top: 20px;
+      grid-column: 4/4;
+      grid-row: 1/5;
+      writing-mode: vertical-rl;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
 
-            @media screen and (max-width: $desktopMinWidth) {
-                grid-column: 1;
-                grid-row: 5;
-                text-align: center;
-                writing-mode: initial;
-            }
-        }
+      @media screen and (max-width: $desktopMinWidth) {
+        grid-column: 1;
+        grid-row: 5;
+        text-align: center;
+        writing-mode: initial;
+      }
     }
+  }
 }
 
 @container title-size (min-width: 800px) {
-    .poster__logo {
-        font-size: 2rem
-    }
+  .poster__logo {
+    font-size: 2rem
+  }
 }

@@ -1,43 +1,43 @@
 .reticula {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
 }
 
 .jugador {
-    background-color: $jugadorBgColor;
-    width: calc(25% - 15px);
-    text-align: center;
-    align-items: flex-start;
-    border-radius: $jugadorBorderRadius;
+  background-color: $jugadorBgColor;
+  width: calc(25% - 15px);
+  text-align: center;
+  align-items: flex-start;
+  border-radius: $jugadorBorderRadius;
 
-    @media screen and (max-width: $desktopBigMinWidth) {
-        width: calc(33% - 10px);
-    }
+  @media screen and (max-width: $desktopBigMinWidth) {
+    width: calc(33% - 10px);
+  }
 
-    @media screen and (max-width: $desktopMinWidth) {
-        width: calc(50% - 10px);
-    }
+  @media screen and (max-width: $desktopMinWidth) {
+    width: calc(50% - 10px);
+  }
 
-    @media screen and (max-width: $mobileMaxWidth) {
-        width: 100%;
-    }
+  @media screen and (max-width: $mobileMaxWidth) {
+    width: 100%;
+  }
 
-    &__imatge {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        object-position: 100% 0;
-        border-radius: $jugadorBorderRadius $jugadorBorderRadius 0px 0px;
-    }
+  &__imatge {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 100% 0;
+    border-radius: $jugadorBorderRadius $jugadorBorderRadius 0px 0px;
+  }
 
-    &__nom {
-        font-weight: bold;
-        font-size: 1.5rem;
-        margin-bottom: 0px;
-        margin-top: 10px;
-    }
+  &__nom {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
 }

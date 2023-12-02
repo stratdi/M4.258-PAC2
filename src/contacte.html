@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/src/assets/images/racket.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playpen+Sans:wght@300;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <title>Top 6 | Tennis Buddies</title>
+</head>
+
+<body>
+  <include src="./views/menu.html"></include>
+  <main class="container">
+    <h2 class="text-center mt-3">Contacte</h2>
+    <section class="align-middle text-center formulari">
+      <form class="card p-4">
+        <div class="row g-3 mb-4">
+          <div class="col-md">
+            <div class="form-floating">
+              <input class="form-control" type="email" name="nom" placeholder="nom" required="true">
+              <label for="nom">Nom</label>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <div class="form-floating">
+                <input class="form-control" type="email" name="llinatges" placeholder="llinatges">
+                <label for="llinatges">Llinatges</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 mb-4">
+          <div class="col-md">
+            <div class="form-floating">
+              <input class="form-control" type="email" name="email" placeholder="email">
+              <label for="email">Correu electrònic</label>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <input class="form-control" type="number" name="naixement" placeholder="1991" min="1920" max="2023"
+                step="1">
+              <label for="naixement">Any de naixement</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-floating mb-4">
+          <textarea class="form-control" name="consulta" placeholder="Motiu de la consulta"
+            style="height: 300px"></textarea>
+          <label for="consulta">Motiu de la consulta</label>
+        </div>
+        <button type="submit" class="btn btn-primary formulari__boto">Envia</button>
+      </form>
+    </section>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.formulari {
+  height: 70dvh;
+  width: 100dvw;
+  display: table-cell;
+
+  &__boto {
+    background-color: lch($enviarColor / $enviarTransparent);
+    border-color: lch($enviarBorderColor / $enviarTransparent);
+
+    &:hover {
+      background-color: lch($enviarColor / $enviarHoverTransparent);
+      border-color: lch($enviarBorderColor / $enviarHoverTransparent);
+    }
+  }
+}
