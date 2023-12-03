@@ -18,43 +18,32 @@
   <include src="./views/menu.html"></include>
   <main class="container">
     <h2 class="text-center mt-3">Contacte</h2>
-    <section class="align-middle text-center formulari">
+    <section class="align-middle formulari">
       <form class="card p-4" netlify>
         <div class="row g-3 mb-4">
           <div class="col-md">
-            <div class="form-floating">
-              <input class="form-control" type="text" id="nom" name="nom" placeholder="nom" required="true">
-              <label for="nom">Nom *</label>
-            </div>
+            <label class="form-label" for="nom">Nom *</label>
+            <input class="form-control" type="text" id="nom" name="nom" required="true">
           </div>
           <div class="col-md">
-            <div class="form-floating">
-              <div class="form-floating">
-                <input class="form-control" type="text" id="llinatges" name="llinatges" placeholder="llinatges" required="true">
-                <label for="llinatges">Llinatges *</label>
-              </div>
-            </div>
+            <label class="form-label" for="llinatges">Llinatges *</label>
+            <input class="form-control" type="text" id="llinatges" name="llinatges" required="true">
           </div>
         </div>
         <div class="row g-3 mb-4">
           <div class="col-md">
-            <div class="form-floating">
-              <input class="form-control" type="email" id="email" name="email" placeholder="email" required="true">
-              <label for="email">Correu electrònic *</label>
-            </div>
+            <label class="form-label" for="email">Correu electrònic *</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="email" required="true">
           </div>
           <div class="col-md">
-            <div class="form-floating">
-              <input class="form-control" type="number" id="naixement" name="naixement" placeholder="1991" min="1920" max="2023"
-                step="1">
-              <label for="naixement">Any de naixement</label>
-            </div>
+            <label class="form-label" for="naixement">Any de naixement</label>
+            <input class="form-control" type="number" id="naixement" name="naixement" placeholder="1991" min="1920"
+              max="2023" step="1">
           </div>
         </div>
-        <div class="form-floating mb-4">
-          <textarea class="form-control" id="consulta" name="consulta" placeholder="Motiu de la consulta"
-            style="height: 300px" required="true"></textarea>
-          <label for="consulta">Motiu de la consulta *</label>
+        <div class="mb-4">
+          <label class="form-label" for="consulta">Motiu de la consulta *</label>
+          <textarea class="form-control" id="consulta" name="consulta" style="height: 300px" required="true"></textarea>
         </div>
         <button type="submit" class="btn btn-primary formulari__boto">Envia</button>
       </form>
