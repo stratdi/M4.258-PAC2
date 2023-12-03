@@ -24,14 +24,14 @@
           <div class="col-md">
             <div class="form-floating">
               <input class="form-control" type="text" id="nom" name="nom" placeholder="nom" required="true">
-              <label for="nom">Nom</label>
+              <label for="nom">Nom *</label>
             </div>
           </div>
           <div class="col-md">
             <div class="form-floating">
               <div class="form-floating">
-                <input class="form-control" type="text" id="llinatges" name="llinatges" placeholder="llinatges">
-                <label for="llinatges">Llinatges</label>
+                <input class="form-control" type="text" id="llinatges" name="llinatges" placeholder="llinatges" required="true">
+                <label for="llinatges">Llinatges *</label>
               </div>
             </div>
           </div>
@@ -39,8 +39,8 @@
         <div class="row g-3 mb-4">
           <div class="col-md">
             <div class="form-floating">
-              <input class="form-control" type="email" id="email" name="email" placeholder="email">
-              <label for="email">Correu electrònic</label>
+              <input class="form-control" type="email" id="email" name="email" placeholder="email" required="true">
+              <label for="email">Correu electrònic *</label>
             </div>
           </div>
           <div class="col-md">
@@ -53,8 +53,8 @@
         </div>
         <div class="form-floating mb-4">
           <textarea class="form-control" id="consulta" name="consulta" placeholder="Motiu de la consulta"
-            style="height: 300px"></textarea>
-          <label for="consulta">Motiu de la consulta</label>
+            style="height: 300px" required="true"></textarea>
+          <label for="consulta">Motiu de la consulta *</label>
         </div>
         <button type="submit" class="btn btn-primary formulari__boto">Envia</button>
       </form>
